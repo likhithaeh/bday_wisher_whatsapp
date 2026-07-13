@@ -1,4 +1,31 @@
-Birthday wisher using whatsapp
+Birthday Wisher
 
-Uses pandas, pywhatkit and datetime modules to read birthdays.csv, to compare with the current date and convey birthday wishes accordingly by choosing a message randomly from pre-defined templates.
+This project automatically sends birthday wishes by checking birthdays stored in a CSV file.
 
+Branches
+
+1. master(whatsapp)
+Uses:
+- pandas
+- pywhatkit
+- datetime
+
+Features:
+- Reads birthdays from "birthdays.csv"
+- Checks if today matches a birthday
+- Chooses a random birthday message from the templates
+- Sends the birthday wish through WhatsApp
+
+2. smtp
+Uses:
+- pandas
+- smtplib
+- datetime
+
+Features:
+- Reads birthdays from "birthdays.csv"
+- Checks if today matches a birthday
+- Chooses a random birthday message from the templates
+- Sends the birthday wish through email
+
+Note : For the "smtp" branch, replace the "phone" column in "birthdays.csv" with an "email" column.
