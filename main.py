@@ -1,7 +1,8 @@
 import pywhatkit,random
 import pandas as pd
+import  datetime as dt
 
-today = (7,13)
+today = (dt.datetime.now().month,dt.datetime.now().day)
 data_row = pd.read_csv("birthdays.csv")
 name = data_row["name"]
 month = data_row["month"]
@@ -15,4 +16,4 @@ if today in bday_dict:
         person = bday_dict[today]
         content = content.replace('[NAME]',person["name"])
         phone = person["phone"]
-        pywhatkit.sendwhatmsg(f"+91{phone}",f"Happy Birthday!!!\n\n{content}",19,32)
+        pywhatkit.sendwhatmsg(f"+91{phone}",f"Happy Birthday!!!\n\n{content}",8,00)
