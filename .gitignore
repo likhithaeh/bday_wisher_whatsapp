@@ -3,3 +3,5 @@ __pycache__/
 .venv/
 birthdays.csv
 .env
+.idea/
+*.iml
